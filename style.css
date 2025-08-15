@@ -1,0 +1,775 @@
+*{
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+    
+.brand-primary {
+    background-color: #198754;
+    color: #fff;
+  }
+  .brand-primary:hover {
+    background-color: #146c43; /* Darker shade for hover */
+    color: #fff;
+  }
+  .text-brand {
+    color: #198754;
+  }
+
+  header{
+    background-image: url(/evarpexbck.jpg);
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.815);
+  }
+
+  header nav{
+    display: flex;
+    justify-content: space-between;
+    padding:25px 20px;
+    padding-bottom: 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgb(20, 20, 20);
+  }
+  .main-logo{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #fff;
+    font-family: "Orbitron", sans-serif;
+  }
+  span{
+    color: #146c43;
+    font-family: "Orbitron", sans-serif;
+  }
+  .nav-links{
+    text-decoration: none;
+    color:#fff;
+    padding:0px 15px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    position: relative;
+  }
+  .nav-links:hover{
+    color: #146c43;
+  }
+
+  /* Underline hover effect for each navigation link */
+.nav-links::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 2px;
+  background-color: #198754;
+  transform: scale(0);
+  transition: transform 0.3s;
+  z-index: 1;
+}
+.nav-links:hover::after,
+.nav-links:focus::after {
+  transform: scaleX(1);
+}
+
+
+  select{
+    text-decoration: none;
+    color:#fff;
+    margin:0px 15px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .search-bar input{
+    padding: 10px 10px;
+    border-radius: 7px;
+    color: #fff;
+    border:1px solid rgba(156, 153, 153, 0.212);
+    font-size: 15px;
+    margin-right: 5px;
+  }
+   .btn1{
+    padding: 9px 15px;
+    border-radius: 7px;
+    border:1px solid #198754;
+    color: #198754;
+    font-size: 15px;
+    transition: background-color 0.6s ease;
+  }
+  .btn1:hover{
+    background-color: #146c43;
+    color: #fff;
+  }
+  .search-bar input, .search-bar button{
+    position: relative;
+    top: -10px;
+  }
+
+/* Text Content */
+.header-text{
+    padding-top: 20vh;
+    padding-bottom: 15vh;
+    padding-left: 9%;
+}
+.header-text h1{
+  font-size: 53px;
+  width: 35%;
+    color: #198754;
+}
+.header-text p{
+   font-size: 20px;
+   width:42%;
+   padding: 30px 0;
+   color: #fff;
+}
+.header-btn a{
+  text-decoration: none;
+  font-size: 20px;
+      transition: background-color 0.6s ease;
+}
+.header-btn a:hover{
+  background-color: rgba(236, 236, 236, 0.925);
+  color: #198754;
+}
+.book-ride{
+  padding: 9px 15px;
+    border-radius: 7px;
+    border:1px solid #198754;
+    background-color: #198754;
+    color: #fff;
+    font-size: 15px;
+}
+
+/* Benefits of IbomRide */
+.h2s{
+  font-size: 33px;
+  color: #198754;
+
+}
+.h5s{
+  font-size: 20px;
+  padding: 10px 0;
+}
+.paragraph{
+  color: rgb(80, 73, 73);
+}
+.benefits{
+  text-align: center;
+  padding: 10vh 0;
+}
+.benefits p{
+  padding-top: 15px;
+}
+.benefits-containers{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.benefits-containers div{
+  width: 25%;
+  text-align: center;
+  border-radius: 5px;
+  padding:20px ;
+  box-shadow: 0px 5px 10px rgb(201, 197, 197);
+  transition: transform 0.6s ease;
+}
+.benefits-containers div:hover{
+  transform: scale(1.03);
+}
+
+.benefits-containers i{
+  color: #146c43;
+  font-size: 55px;
+}
+
+ /* OUR STORY  */
+.story{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding:18vh 0;
+}
+.story img{
+   width: 40%;
+   border-radius: 5px;
+  box-shadow: 5px 5px 10px rgb(201, 197, 197);
+}
+.story div{
+  width: 40%;
+}
+.story h2{
+  padding: 20px 0;
+}
+.Big-paragraph{
+  color: rgba(80, 73, 73, 0.712);
+font-size: 22px;
+padding-bottom: 10px;
+}
+.story a{
+  font-size: larger;
+  text-decoration: none;
+  padding:13px 20px;
+  position: relative;
+  top: 7vh;
+  transition: background-color 0.6s ease;
+}
+.story a:hover{
+  background-color: rgba(236, 236, 236, 0.925);
+  color: #198754;
+}
+
+/* VISION & MISSION */
+.vision-mission{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.vision-mission div{
+  width: 40%;
+  text-align: center;
+  border-radius: 5px;
+  padding:20px ;
+  box-shadow: 0px 5px 10px rgb(201, 197, 197);
+  transition: transform 0.6s ease;
+}
+.vision-mission div:hover{
+  transform: scale(1.03);
+}
+
+.vision-mission i{
+  color: #146c43;
+  font-size: 55px;
+}
+
+/* CORE VALUES */
+.core-values{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.core-values div{
+  width: 25%;
+  border-radius: 5px;
+  padding:20px ;
+  box-shadow: 0px 5px 10px rgb(201, 197, 197);
+  transition: transform 0.6s ease;
+}
+.core-values div:hover{
+  transform: scale(1.03);
+}
+
+.core-values i{
+  color: #146c43;
+  font-size: 55px;
+}
+
+/* STAT COUNTER */
+.stats{
+  display: flex;
+  justify-content: center;
+  gap:150px;
+  padding: 50px 0;
+  text-align: center;
+}
+.stats h3{
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+
+
+/* TEAM */
+.team{
+  display: flex;
+  justify-content: center;
+  gap:25vh;
+  text-align: center;
+  padding-bottom: 70px;
+}
+.team h4{
+  padding: 10px 0;
+}
+.team img{
+  border-radius: 200px;
+  width: 200px;
+  height: 200px;
+}
+
+
+/* FINAL CTA */
+.CTA{
+  text-align: center;
+  padding-bottom: 50px;
+}
+.CTA h4{
+  font-size: 25px;
+  padding: 20px 0;
+}
+.CTA a{
+  font-size: larger;
+  text-decoration: none;
+  padding:13px 20px;
+  position: relative;
+  top: 7vh;
+    transition: background-color 0.6s ease;
+}
+.CTA a:hover{
+  background-color: rgba(236, 236, 236, 0.925);
+  color: #198754;
+}
+
+/* SERVICES SECTION */
+
+.services{
+  margin-top: 50px;
+  padding-top: 50px;
+}
+
+.card-img-top{
+   width: 100%;
+   height: 30vh;
+   border-top-right-radius:5px ;
+   border-top-left-radius:5px ;
+}
+.services-containers{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.services-containers div{
+  width: 25%;
+  text-align: center;
+  border-radius: 5px;
+  padding-bottom:20px;
+  margin-bottom: 30px;
+  box-shadow: 0px 5px 10px rgb(201, 197, 197);
+    transition: transform 0.6s ease;
+}
+.services-containers div:hover{
+  transform: scale(1.03);
+}
+
+
+/* Book A Ride Section */
+
+.ride-form{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+.ride-icons{
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  text-align: center;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+.ride-icons i{
+  color: #146c43;
+  font-size: 55px;
+}
+
+.form-div input{
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  font-size:15px;
+  border-radius: 7px ;
+    border:1px solid rgba(156, 153, 153, 0.76);
+}
+.form-div select{
+    width: 100%;
+  height: 40px;
+  padding-left: 5px;
+  font-size:15px;
+  color: black;
+  border-radius: 7px ;
+    border:1px solid rgba(156, 153, 153, 0.76);
+}
+.form-div button{
+  font-size:larger;
+ padding: 10px 25px;
+}
+.need-help{
+  padding: 30px 0;
+  text-align: center;
+}
+
+/* Become A Rider Section */
+
+#Become{
+  background-color: #146c43;
+  color: #fff;
+    display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 70px 0;
+}
+#Become div{
+   width: 40%;
+}
+#Become img{
+   width: 90%;
+   height: 70vh;
+   border-radius: 10px;
+  box-shadow: 5px 5px 10px none;
+  position: relative;
+  left: 20vh;
+}
+#Become h2,.Big-paragraph{
+  color: #fff;
+}
+#Become li{
+  padding: 5px 0;
+}
+#Become a{
+  font-size: larger;
+  font-weight: bolder;
+  background-color: #fff;
+    color: black;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 7px;
+  position: relative;
+  top: 30px;
+    transition: background-color 0.6s ease;
+}
+#Become a:hover{
+  color: #fff;
+  background-color: #01381e;
+}
+
+/* FOOTER SECTION */
+
+footer{
+    background-color: rgba(0, 0, 0, 0.815);
+  color: #fff;
+  padding-top: 20px;
+}
+footer a{
+  color: #fff;
+  text-decoration: none;
+    transition: all 0.6s ease;
+}
+footer a:hover{
+  color: #198754;
+  font-size: 14px;
+  text-shadow: 0px 5px 10px;
+}
+footer p{
+  padding-bottom: 20px;
+}
+.footer-container{
+    display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.footer-container div{
+  width: 20%;
+}
+.lastman{
+  text-align: center;
+   padding-top: 5px;
+}
+
+  /* Responsive Navbar Styles */
+     @media (max-width: 768px) { 
+
+      *{
+        max-width: 100%;
+      }
+      
+      /* HAMBURGER */
+      header nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 10px;
+        position: fixed;
+        z-index: 1000;
+      }
+      .nav-link {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: black;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 999;
+      }
+      .nav-link.active {
+        display: flex;
+      }
+      .nav-links, select {
+        padding: 15px;
+        font-size: 18px;
+        border-bottom: 1px solid #eee;
+        width: 100%;
+        text-align: left;
+      }
+      .search-bar {
+        width: 100%;
+        margin-top: 10px;
+      }
+      .hamburger {
+        display: block;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 1001;
+      }
+      .hamburger span {
+        display: block;
+        height: 4px;
+        width: 100%;
+        background: #198754;
+        margin: 6px 0;
+        border-radius: 2px;
+        transition: 0.4s;
+      }
+      /* hamburger styling ends here */
+
+
+
+/* Text Content */
+.header-text{
+    padding-top: 20vh;
+    padding-bottom: 8vh;
+    padding-left: 9%;
+}
+.header-text h1{
+  font-size: 43px;
+  width: 100%;
+}
+.header-text p{
+   font-size: 25px;
+   width:100%;
+   padding: 50px 0;
+}
+/* .header-btn a{
+  text-decoration: none;
+  font-size: 20px;
+      transition: background-color 0.6s ease;
+}
+.header-btn a:hover{
+  background-color: rgba(236, 236, 236, 0.925);
+  color: #198754;
+} */
+
+
+/* Benefits of IbomRide */
+.h2s{
+  font-size: 30px;
+  color: #198754;
+
+}
+.h5s{
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.benefits{
+  width: 95%;
+  text-align: center;
+  padding: 6vh 0;
+}
+.benefits-containers{
+  display: block;
+}
+.benefits-containers div{
+  width: 90%;
+  margin: 20px;
+}
+
+.benefits-containers i{
+  color: #146c43;
+  font-size: 40px;
+}
+
+ /* OUR STORY  */
+.story{
+  display: block;
+  padding:18vh 0;
+}
+.story img{
+   width: 90%;
+   margin: 0 20px;
+}
+.story div{
+  width: 90%;
+   margin: 0 20px;
+}
+
+/* VISION & MISSION */
+.vision-mission{
+  display: block;
+}
+.vision-mission div{
+  width: 90%;
+  margin: 20px;
+}
+
+.vision-mission i{
+  color: #146c43;
+  font-size: 40px;
+}
+
+/* CORE VALUES */
+.core-values{
+  display: block;
+}
+.core-values div{
+  width: 90%;
+  margin: 20px;
+}
+
+.core-values i{
+  color: #146c43;
+  font-size: 40px;
+}
+
+/* STAT COUNTER */
+.stats{
+  display:grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  row-gap: 20px;
+  column-gap: 40px;
+  padding: 10px 0;
+}
+.stats h3{
+  padding-bottom: 0px;
+  font-size: 25px;
+}
+
+/* TEAM */
+.team{
+  display: flex;
+  justify-content: start;
+  margin-left: 10px;
+  gap:5px;
+  text-align: center;
+  padding-bottom: 70px;
+}
+.team h4{
+  padding: 5px 0;
+}
+.team img{
+  border-radius: 200px;
+  width: 100px;
+  height: 100px;
+}
+
+/* SERVICES SECTION */
+
+
+.services{
+  margin-top: 50px;
+  padding-top: 50px;
+}
+
+.card-img-top{
+   width: 100%;
+   height: 30vh;
+   border-top-right-radius:5px ;
+   border-top-left-radius:5px ;
+}
+.services-containers{
+  display: block;
+}
+.services-containers div{
+  width: 90%;
+  margin: 23px;
+}
+
+/* Book A Ride Section */
+
+.ride-form{
+  display: block;
+  justify-content: center;
+  gap: 30px;
+}
+.ride-icons{
+  display: grid;
+ grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  row-gap: 20px;
+  column-gap: 40px;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+.ride-icons i{
+  color: #146c43;
+  font-size: 40px;
+}
+
+.form-div input{
+  width: 70%;
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+.form-div select{
+    width: 70%;
+ margin-bottom: 15px;
+  margin-left: 20px;
+}
+.form-div button{
+margin: 0 20px;
+}
+.need-help{
+  padding: 15px 0;
+  text-align: start;
+  margin-left: 20px;
+}
+
+/* Become A Rider Section */
+
+#Become{
+  background-color: #146c43;
+  color: #fff;
+    display: block;
+  padding: 0px 0;
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+#Become div{
+   width: 90%;
+   margin-left: 30px;
+}
+#Become img{
+   width: 90%;
+   height: 35vh;
+  position: relative;
+  left: 0vh;
+  top: 10vh;
+}
+
+/* FOOTER SECTION */
+
+footer p{
+  padding-bottom: 10px;
+}
+.footer-container{
+    display: block;
+}
+.footer-container div{
+  width: 90%;
+  margin-left: 20px;
+}
+.lastman{
+  font-size: smaller;
+}
+
+ } 

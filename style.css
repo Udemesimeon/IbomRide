@@ -20,7 +20,7 @@
   }
 
   header{
-    background-image: url(/evarpexbck.jpg);
+    background-image: url(evarpexbck.jpg);
     background-blend-mode: darken;
     background-color: rgba(0, 0, 0, 0.815);
   }
@@ -547,7 +547,7 @@ footer p{
 .header-text{
     padding-top: 20vh;
     padding-bottom: 8vh;
-    padding-left: 9%;
+    padding-left: 5%;
 }
 .header-text h1{
   font-size: 43px;
